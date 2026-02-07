@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>I'm Sorry 🥺</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #ffd6e8, #fff1f7);
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+            text-align: center;
+            max-width: 400px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        h1 {
+            color: #ff6f91;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+        }
+
+        .name {
+            color: #ff4d6d;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #555;
+            margin: 10px 0;
+        }
+
+        .emoji {
+            font-size: 3rem;
+            margin: 15px 0;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 12px 25px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 20px;
+            background-color: #ff6f91;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s, background-color 0.2s;
+        }
+
+        button:hover {
+            background-color: #ff4d6d;
+            transform: scale(1.05);
+        }
+
+        .hidden {
+            display: none;
+            margin-top: 15px;
+            font-size: 1.2rem;
+            color: #ff4d6d;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="card">
+        <h1>I'm Sorry 🥺</h1>
+
+        <!-- PERSONALIZED NAME -->
+        <div class="name">Dear <strong>[SIYA BETUU]</strong> 💖</div>
+
+        <!-- CUTE EMOJIS -->
+        <div class="emoji">👉👈 😔 💗</div>
+
+        <!-- PERSONALIZED MESSAGE -->
+        <p>
+            I know I made a mistake, and I truly didn’t mean to hurt you.
+            Please know that you matter a lot to me 🥹
+        </p>
+
+        <p>
+            I hope you can forgive me and give me one more smile 🌸
+        </p>
+
+        <!-- BUTTON -->
+        <button onclick="showLove()">Click if you forgive me 💕</button>
+
+        <!-- HIDDEN MESSAGE -->
+        <div id="loveMsg" class="hidden">
+            Yayyy! Thank you 🥰💞  
+            *sending hugs* 🤗✨
+        </div>
+    </div>
+
+    <script>
+        function showLove() {
+            document.getElementById("loveMsg").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
